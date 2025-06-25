@@ -27,7 +27,7 @@
 */
 
 body {
-  background-color: black;
+  background-color: #141414;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Source Sans 3", sans-serif;
@@ -44,7 +44,7 @@ h1.test {
   width: 100%;
   margin: 0 auto;
   padding: 4rem;
-  background-color: black;
+  background-color: #141414;
   min-height: 70vh;
   color: #666;
   text-align: center;
@@ -75,7 +75,7 @@ h1.test {
 /* Set the scroll wrapper */
 
 .scroll-effect {
-  background-color: black;
+  background-color: #141414;
   position: relative;
   height: 100vh;
   display: flex;
@@ -84,7 +84,7 @@ h1.test {
 
 /* Section 1 */
 section.one {
-  background: rgba(0, 0, 0, 0.5);
+  background: #141414;
   width: 100%;
   overflow: hidden;
   display: flex;
