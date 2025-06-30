@@ -1,33 +1,8 @@
 /* Adding custom CSS styles here */
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Fustat&family=Source+Sans+3:wght@200..900&display=swap");
 
-/* Font Family References
-
-.fugaz-one-regular {
-  font-family: "Fugaz One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.fustat-jw {
-  font-family: "Fustat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.source-sans-3-jw {
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-*/
-
 body {
-  background-color: black;
+  background-color: #141414;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Source Sans 3", sans-serif;
@@ -44,7 +19,7 @@ h1.test {
   width: 100%;
   margin: 0 auto;
   padding: 4rem;
-  background-color: black;
+  background-color: #141414;
   min-height: 70vh;
   color: #666;
   text-align: center;
@@ -75,7 +50,7 @@ h1.test {
 /* Set the scroll wrapper */
 
 .scroll-effect {
-  background-color: black;
+  background-color: #141414;
   position: relative;
   height: 100vh;
   display: flex;
@@ -84,7 +59,7 @@ h1.test {
 
 /* Section 1 */
 section.one {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(20, 20, 20, 0.5);
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -394,7 +369,7 @@ section.one {
   background-color: #ffc042;
   top: 5%;
   left: 50%;
-  transform: translate(1550%, -50%);
+  transform: translate(1550%, -56%);
 }
 .cursor--marketer {
   background-color: #f17eb4;
@@ -414,8 +389,8 @@ section.one {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 500;
-  transform: translate(-37%, -00%);
+  z-index: 10;
+  transform: translate(-44%, -32%);
 }
 
 .dunes-mobile {

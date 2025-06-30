@@ -18,14 +18,6 @@
       <div id="smooth-content">
         <!-- Start of smooth scroller -->
 
-        <div class="test-text">
-          <h1 class="test">Start</h1>
-
-          <p>Lets start the journey of ❤️.</p>
-          <div class="box green-gradient"></div>
-        </div>
-
-        <!-- all your sections/panels go here -->
         <!-- Scroll effect -->
         <div class="scroll-effect" id="ScrollEffect">
           <!-- Section 1 -->
@@ -149,14 +141,14 @@
 
             <svg
               class="designer-box"
-              width="960"
-              height="240"
+              width="700"
+              height="160"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
                 class="designer-box-rect"
-                width="958"
-                height="238"
+                width="698"
+                height="158"
                 x="1"
                 y="1"
                 fill="#FFFFFF"
@@ -219,97 +211,6 @@
               alt="Dunes Mobile Graphic"
             />
           </section>
-
-          <!-- <div class="tl_timeline">
-            <div class="tl_row">
-              <div id="studiozoom" class="studiozoom">studio zoom</div>
-              <div id="thumbzoom" class="thumbzoom">thumbzoom</div>
-              <div></div>
-              <div></div>
-            </div>
-
-            <div class="tl_row">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-
-            <div class="tl_row">
-              <div id="imagezoom" class="imagezoom">zoom</div>
-              <div></div>
-              <div id="imagezoomOut" class="imagezoomOut">zoom out</div>
-              <div></div>
-              <div id="imagemoveright" class="imagemoveright">move right</div>
-              <div></div>
-              <div id="imagemovecenter" class="imagemovecenter">
-                move center
-              </div>
-            </div>
-
-            <div class="tl_row">
-              <div></div>
-              <div class="box1in" id="box1in">box 1 in</div>
-              <div></div>
-              <div class="box1out" id="box1out">box 1 out</div>
-            </div>
-
-            <div class="tl_row">
-              <div></div>
-              <div></div>
-              <div class="box2in" id="box2in">box 2 in</div>
-              <div></div>
-              <div class="box2out" id="box2out">box 2 out</div>
-            </div>
-
-            <div class="tl_row">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div class="box3in" id="box3in">box 3 in</div>
-              <div></div>
-              <div class="box3out" id="box3out">box 3 out</div>
-            </div>
-
-            <div class="tl_row">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div class="box4in" id="box4in">box 4 in</div>
-              <div></div>
-              <div class="box4out" id="box4out">box 4 out</div>
-            </div>
-
-            <div class="tl_row">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div class="box5in" id="box5in">box 5 in</div>
-              <div></div>
-              <div class="box5out" id="box5out">box 5 out</div>
-            </div>
-
-            <div class="tl_row">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div class="statsfadein" id="statsfadein">Stats in</div>
-              <div></div>
-              <div class="statsfadeout" id="statsfadeout">Stats out</div>
-            </div>
-          </div> -->
         </div>
 
         <!-- H-SCROLL TRACK -->
@@ -360,12 +261,6 @@
 
             <!-- <div class="dune-spacer2">spacer</div> -->
           </div>
-        </div>
-
-        <!-- End - OR Next Section -->
-        <div class="test-text">
-          <h1 class="test">End or next section</h1>
-          <p>(c) James W. 2025</p>
         </div>
 
         <!-- End of smooth scroller -->
@@ -439,7 +334,6 @@
         animation: tween,
         scrub: 1,
         invalidateOnRefresh: true,
-        markers: true,
       });
 
       // 3. Fetch items for container query
@@ -456,7 +350,6 @@
           }),
           scrub: true,
           start: "left 20%",
-          markers: true,
         });
       });
 
@@ -466,7 +359,6 @@
           trigger: ".one",
           start: "center center",
           end: "+=5500", // Increased scroll distance
-          markers: true,
           scrub: 1,
           pin: ".scroll-effect",
         },
@@ -478,7 +370,7 @@
         transformOrigin: "center center",
         opacity: 0,
         y: 10,
-        duration: 1,
+        duration: 2,
       });
       // Create stagger fade with each image tile
       scrollTL.to(
@@ -489,7 +381,7 @@
           delay: 0,
           x: "2%",
           stagger: { amount: 0.5, from: "random" },
-          duration: 1,
+          duration: 2,
         },
         "<0.1"
       );
@@ -501,7 +393,7 @@
           ease: "power1.inOut",
           xPercent: 40,
           transformOrigin: "center center",
-          duration: 2,
+          duration: 3,
         },
         "<"
       );
@@ -517,31 +409,23 @@
         "<0.1"
       );
       // Text Split Animation
-      scrollTL.from(
-        chars,
-        {
-          yPercent: 30,
-          filter: "blur(8px)",
-          stagger: 0.2,
-          opacity: 0,
-          ease: "power1.inOut",
-          duration: 1,
-        },
-        "-=50%"
-      );
-      scrollTL.from(
-        ".text-box--1",
-        {
-          opacity: 0,
-          xPercent: -50,
-          ease: "none",
-          duration: 3,
-          yoyo: true,
-          repeat: 1,
-          repeatDelay: 2,
-        },
-        "-=50%"
-      );
+      scrollTL.from(chars, {
+        yPercent: 30,
+        filter: "blur(8px)",
+        stagger: 0.2,
+        opacity: 0,
+        ease: "power1.inOut",
+        duration: 1,
+      });
+      scrollTL.from(".text-box--1", {
+        opacity: 0,
+        xPercent: -50,
+        ease: "none",
+        duration: 3,
+        yoyo: true,
+        repeat: 1,
+        repeatDelay: 2,
+      });
       scrollTL.from(
         ".text-box--2",
         {
@@ -559,8 +443,89 @@
           scale: 0.5,
           ease: "power1.inOut",
           duration: 3,
+          yoyo: true,
+          repeat: 1,
+          repeatDelay: 2,
         },
         "-=50%"
+      );
+
+      scrollTL.to(
+        ".text-box--2",
+        {
+          opacity: 0,
+          xPercent: 50,
+          duration: 3,
+        },
+        "-=50%"
+      );
+
+      // BEGIN ANALYTICS PART 2
+
+      scrollTL.to(".dune-tile", {
+        scale: 4.75,
+        x: -300,
+        y: -150,
+        ease: "none",
+        transformOrigin: "center center",
+        duration: 2.5,
+      });
+      scrollTL.from(
+        ".text-box--3",
+        {
+          xPercent: -100,
+          opacity: 0,
+          duration: 4,
+        },
+        "<"
+      );
+      scrollTL.to(
+        ".dunes-blank--1",
+        {
+          opacity: 0.75,
+          duration: 1,
+          ease: "none",
+        },
+        "<0.25"
+      );
+      scrollTL.to(
+        ".dunes-blank--2",
+        {
+          opacity: 0.5,
+          duration: 1,
+          ease: "none",
+        },
+        "<0.2"
+      );
+      scrollTL.to(
+        ".dunes-blank--3",
+        {
+          opacity: 0.25,
+          duration: 1,
+          ease: "none",
+        },
+        "<0.25"
+      );
+
+      scrollTL.to(
+        ".cursor--designer",
+        {
+          x: 88,
+          y: 260,
+          duration: 2.5,
+          ease: "power1.inOut",
+        },
+        "<0.5"
+      );
+      scrollTL.to(
+        ".cursor--marketer",
+        {
+          x: 190,
+          y: 190,
+          duration: 2.5,
+          ease: "power1.inOut",
+        },
+        "<0.5"
       );
       scrollTL.from(".designer-box-rect", {
         duration: 1,
@@ -570,26 +535,6 @@
           fillOpacity: 0,
         },
       });
-      scrollTL.to(
-        ".cursor--designer",
-        {
-          x: 80,
-          y: 400,
-          duration: 2.5,
-          ease: "power1.inOut",
-        },
-        "<0.5"
-      );
-      scrollTL.to(
-        ".cursor--marketer",
-        {
-          x: 80,
-          y: 350,
-          duration: 2.5,
-          ease: "power1.inOut",
-        },
-        "<0.5"
-      );
       scrollTL.to(".dune-tile__across div", {
         y: 100,
         opacity: 0,
@@ -632,77 +577,16 @@
         },
         "-=50%"
       );
-
       scrollTL.to(
-        ".inspector-panel-ui",
-        {
-          y: 100,
-          opacity: 0,
-          scale: 0.5,
-          ease: "power1.inOut",
-          duration: 3,
-        },
-        "-=50%"
-      );
-      scrollTL.to(
-        ".text-box--2",
-        {
-          opacity: 0,
-          xPercent: 50,
-          duration: 3,
-        },
-        "-=50%"
-      );
-
-      // BEGIN ANALYTICS PART 2
-
-      scrollTL.to(".dune-tile", {
-        scale: 4.75,
-        x: -300,
-        y: -150,
-        ease: "none",
-        transformOrigin: "center center",
-        duration: 2.5,
-      });
-      scrollTL.from(
         ".text-box--3",
         {
           xPercent: -100,
           opacity: 0,
-          duration: 4,
-          yoyo: true,
-          repeat: 1,
-          repeatDelay: 4,
+          duration: 2,
         },
         "<"
       );
-      scrollTL.to(
-        ".dunes-blank--1",
-        {
-          opacity: 0.75,
-          duration: 1,
-          ease: "none",
-        },
-        "<0.25"
-      );
-      scrollTL.to(
-        ".dunes-blank--2",
-        {
-          opacity: 0.5,
-          duration: 1,
-          ease: "none",
-        },
-        "<0.2"
-      );
-      scrollTL.to(
-        ".dunes-blank--3",
-        {
-          opacity: 0.25,
-          duration: 1,
-          ease: "none",
-        },
-        "<0.25"
-      );
+
       scrollTL.to(".dune-tile", {
         x: 500,
         y: -80,
@@ -762,7 +646,7 @@
 
           xPercent: -50,
           ease: "none",
-          duration: 4,
+          duration: 1,
         },
         "-=50%"
       );
@@ -805,18 +689,14 @@
         xPercent: -50,
         ease: "none",
         duration: 2,
-        delay: 4,
+        delay: 1,
       });
-      scrollTL.to(
-        ".dunes-mobile",
-        {
-          opacity: 1,
-          y: -350,
-          ease: "power2.inOut",
-          duration: 4,
-        },
-        "-=50%"
-      );
+      scrollTL.to(".dunes-mobile", {
+        opacity: 1,
+        y: -350,
+        ease: "power2.inOut",
+        duration: 4,
+      });
       scrollTL.to(".dunes-mobile, .dune-tile", {
         opacity: 0,
         x: -1350,
