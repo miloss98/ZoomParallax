@@ -316,7 +316,7 @@
 
       const tween = gsap.fromTo(
         races,
-        { x: () => window.innerWidth },
+        { x: () => window.innerWidth / 2 },
         {
           x: getScrollAmount,
           duration: 3,
@@ -328,7 +328,7 @@
 
       ScrollTrigger.create({
         trigger: ".racesWrapper",
-        start: "top top",
+        start: "center center",
         end: () => `+=${getScrollAmount() * -1}`,
         pin: true,
         animation: tween,
