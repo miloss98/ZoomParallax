@@ -440,7 +440,7 @@ section.one {
 }
 
 .dunes-card {
-  width: 246px;
+  width: auto;
   height: 520px;
   transform: translate(-0%, 20%);
   /* position: absolute;
@@ -452,6 +452,7 @@ section.one {
   width: 618px;
   height: 378px;
   transform: translate(-20%, -20%);
+  margin-left: 25px;
   /* position: absolute;
   left: 437px;
   top: 392px; */
